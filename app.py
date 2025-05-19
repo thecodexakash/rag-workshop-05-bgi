@@ -33,4 +33,3 @@ if __name__ == "__main__":
     for i, chunk in enumerate(chunks[:5]):
         print(f"--- Chunk {i+1} ---")
         print(chunk)
-        print()
