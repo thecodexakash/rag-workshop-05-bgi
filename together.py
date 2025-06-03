@@ -6,9 +6,11 @@ from pinecone import Pinecone, ServerlessSpec
 import hashlib
 from together import Together
 
-PINECONE_API_KEY = "[pinecone api key]"
-TOGETHER_API_KEY = "[together api key]"
-INDEX_NAME = "[your index name]"
+
+
+PINECONE_API_KEY = "your api key"
+TOGETHER_API_KEY = "your together api key"
+INDEX_NAME = "your index name"
 
 
 pinecone = Pinecone(api_key=PINECONE_API_KEY, environment="us-east-1")
