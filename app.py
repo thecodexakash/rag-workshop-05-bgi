@@ -6,9 +6,11 @@ from pinecone import Pinecone, ServerlessSpec
 import hashlib
 from together import Together
 
-PINECONE_API_KEY = "pcsk_5xHMJY_NWd2AyaEamC94GHSd3kBRnbJh2tPceDuERrjxwmCNSt8MzK3siQiy4debodBjMm"
-TOGETHER_API_KEY = "fbfeff168c6cf0ba481f7258af0318922947fa25392bbf2a90ed248cb1257d41"
-INDEX_NAME = "bgi-rocks"
+
+
+PINECONE_API_KEY = "your api key"
+TOGETHER_API_KEY = "your together api key"
+INDEX_NAME = "your index name"
 
 
 pinecone = Pinecone(api_key=PINECONE_API_KEY, environment="us-east-1")
