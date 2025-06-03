@@ -1,4 +1,7 @@
+streamlit
 PyPDF2
 langchain
 sentence-transformers
-numpy
+pinecone-client
+together
+pyreadline3

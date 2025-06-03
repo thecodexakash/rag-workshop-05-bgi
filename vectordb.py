@@ -3,8 +3,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone,ServerlessSpec
 import hashlib
-pinecone = Pinecone(api_key="",environment="us-east-1")
-index_name = "bgi-rocks"
+
+pinecone = Pinecone(api_key="your api key",environment="us-east-1")
+index_name = "your index name"
 existing_indexes = pinecone.list_indexes()
 print(f"Existing indexes: {existing_indexes}")
 index_names = [idx['name'] for idx in existing_indexes] 
@@ -85,7 +86,7 @@ def query_pinecone(index, query, model, top_k=5):
 if __name__ == "__main__":
     import os
 
-    pdf_file = "lorem_ipsum.pdf"
+    pdf_file = "your pdf file path"
 
     print("Extracting text...")
     raw_text = get_pdf_text(pdf_file)
@@ -106,6 +107,7 @@ if __name__ == "__main__":
     print("Upload complete!")
 
     sample_query = "What is Lorem Ipsum?"
+
     print(f"\nQuerying: {sample_query}")
     results = query_pinecone(index, sample_query, model)
 
